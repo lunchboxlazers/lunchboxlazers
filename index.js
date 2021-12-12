@@ -41,13 +41,13 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
   const image = document.createElement('img');
-  image.src = `/images/gallery_image-${i}.jpg`;
+  image.src = `./images/gallery_image-${i}.jpg`;
   image.alt = `Sample photograph number ${i} of portfolio`;
   image.classList.add('galleryImg');
 
   image.addEventListener('click', () => {
     popup.style.transform = `translateY(0)`;
-    selectedImage.src = `/images/gallery_image-${i}.jpg`;
+    selectedImage.src = `./images/gallery_image-${i}.jpg`;
     selectedImage.alt = `Sample photograph number ${i} of portfolio`;
   });
 
