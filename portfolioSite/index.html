@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="carousel.js" defer></script>
+    <title>Antonio Marthers</title>
+  </head>
+
+  <body>
+<!--Splash Animation-->
+    <div class="splash">
+      <p class="fade-in">Antonio Marthers</p>
+    </div>
+<!--Nav Bar-->
+<header>
+
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <a href="#bio"><p class="navLogo">AM</p></a>
+
+      <ul class="nav-links">
+        <li><a href="#">Bio</a></li>
+        <li><a href="#logos">Logos</a></li>
+        <li><a href="#pics">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--Bio-->
+  <section id="bio">
+    <img class="portrait" src="images/headShot.jpg" alt="self portrait">
+    <div class="bio">
+      <h1>Hello, I'm Antonio Marthers.</h1>
+      <h3>I specialize in web design and development.</h3>
+      <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Massa vitae tortor condimentum lacinia quis. Ornare massa eget egestas purus viverra. Nec feugiat nisl pretium fusce id velit. Velit laoreet id donec ultrices. Nulla facilisi nullam vehicula ipsum. Erat imperdiet sed euismod nisi porta. Ut eu sem integer vitae justo. At quis risus sed vulputate odio. Nibh tortor id aliquet lectus proin. Adipiscing elit pellentesque habitant morbi tristique senectus. Ut tortor pretium viverra suspendisse. Orci a scelerisque purus semper eget duis. Aliquam sem fringilla ut morbi. Duis ultricies lacus sed turpis tincidunt id aliquet risus.
+
+      Vel pretium lectus quam id leo in vitae. Eu non diam phasellus vestibulum lorem sed. Nisi vitae suscipit tellus mauris a diam. Enim facilisis gravida neque convallis. Pretium nibh ipsum consequat nisl vel. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Gravida cum sociis natoque penatibus et magnis dis parturient. Ac turpis egestas integer eget aliquet. Ullamcorper malesuada proin libero nunc. Sed pulvinar proin gravida hendrerit lectus. Malesuada bibendum arcu vitae elementum curabitur vitae. Non nisi est sit amet. Elementum facilisis leo vel fringilla est ullamcorper. Nunc sed augue lacus viverra vitae congue eu consequat ac. Sit amet massa vitae tortor condimentum. Congue quisque egestas diam in arcu cursus euismod quis viverra. Placerat orci nulla pellentesque dignissim enim sit amet.
+      
+      Nibh praesent tristique magna sit amet. Ac tortor vitae purus faucibus ornare suspendisse sed. Et odio pellentesque diam volutpat commodo. Gravida arcu ac tortor dignissim convallis aenean. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Ut morbi tincidunt augue interdum velit euismod in. A diam maecenas sed enim ut sem viverra aliquet. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Eget duis at tellus at urna. Fermentum dui faucibus in ornare quam viverra.</p>
+    </div>
+  </section>
+<!--Logo Slider-->
+  <section aria-label="Logo Samples" id="logos">
+    <h1>Logos</h1>
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="images/salonLogo.png" alt="Salon Logo">
+            </li>
+            <li class="slide">
+              <img src="images/isometric.png" alt="Day Care Logo">
+            </li>
+            <li class="slide">
+              <img src="images/landscapeLogo.png" alt="Landscape Logo">
+            </li>
+            <li class="slide">
+              <img src="images/nueroPsych.png" alt="Psychiatry Logo">
+            </li>
+            <li class="slide">
+              <img src="images/seal.png" alt="Brewery Logo">
+            </li>
+            <li class="slide">
+              <img src="images/dogeGroom.png" alt="Dog Grooming Logo">
+            </li>
+            <li class="slide">
+              <img src="images/cleanerLogo.png" alt="Cleaner Logo">
+            </li>
+          </ul>
+    </div>
+  </section>
+<!--Gallery-->
+  <section id="pics">
+    <div class="container">
+      <h1>Gallery</h1>
+      <div id="gallery"></div>
+    </div>
+    <div id="popup">
+      <img src="" alt="" id="selectedImage" >
+    </div>
+  </section>    
+<!--Contact-->
+  <section id="contact">
+
+    <div class="formContainer">
+      <h1>Contact</h1>
+      <form action="">
+
+        <div class="formGroup">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+
+        <div class="formGroup">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="formGroup">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+    <div id="status" class="error">error</div>
+  </section>
+
+  <script src="index.js"></script>
+
+  </body>
+</html>
